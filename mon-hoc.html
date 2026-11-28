@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7fb">
+    <meta name="description" content="Khoa CNTT — danh sách đầy đủ các môn học theo từng cấp học và chương trình đào tạo.">
+    <title>Môn học — Khoa CNTT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Khoa CNTT - Trang chủ">
+          <span class="brand-mark" aria-hidden="true">K<span>.</span></span>
+          <span class="brand-name">Khoa <strong>CNTT</strong></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Mở menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Điều hướng chính">
+          <a class="nav-link" href="index.html">Trang chủ</a>
+          <a class="nav-link active" href="mon-hoc.html">Môn học</a>
+          <a class="nav-link" href="kiem-tra.html">Kiểm tra</a>
+          <a class="nav-link" href="ket-qua.html">Kết quả</a>
+          <a class="nav-link" href="index.html#tai-lieu">Tài liệu</a>
+        </nav>
+        <a class="header-cta" href="login.html">Đăng nhập <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="top">
+      <div class="page-shell subjects-container">
+        <section class="content-section courses-section" id="mon-hoc" aria-labelledby="subjects-title">
+          <div class="section-heading">
+            <div>
+              <div class="section-kicker">CHƯƠNG TRÌNH HỌC</div>
+              <h2 id="subjects-title">Danh sách môn học <span class="heading-spark">✳</span></h2>
+              <p>Chọn cấp học và môn học bạn muốn ôn tập hoặc làm bài kiểm tra.</p>
+            </div>
+            <a class="view-all" href="index.html">Về trang chủ <span aria-hidden="true">→</span></a>
+          </div>
+
+          <section class="subject-group" aria-labelledby="level-thcs">
+            <h3 class="group-title" id="level-thcs">Trung học cơ sở</h3>
+            <div class="subject-grid">
+              <a href="#sinh-hoc" class="subject-card" data-subject="Sinh học">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Sinh học</span>
+              </a>
+
+              <a href="#hoa-hoc" class="subject-card" data-subject="Hoá học">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 2v7.31"/><path d="M14 9.3V2"/><path d="M8.5 2h7"/>
+                    <path d="M14 9.3a6.5 6.5 0 1 1-4 0"/><path d="M5.52 16h12.96"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Hoá học</span>
+              </a>
+
+              <a href="#dia-ly" class="subject-card" data-subject="Địa lý">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Địa lý</span>
+              </a>
+
+              <a href="#cong-nghe" class="subject-card" data-subject="Công nghệ">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Công nghệ</span>
+              </a>
+
+              <a href="#vat-ly" class="subject-card" data-subject="Vật lý">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="2"/>
+                    <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(30 12 12)"/>
+                    <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(-30 12 12)"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Vật lý</span>
+              </a>
+
+              <a href="#gdcd" class="subject-card" data-subject="GDCD">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>
+                  </svg>
+                </span>
+                <span class="subject-label">GDCD</span>
+              </a>
+
+              <a href="#am-nhac" class="subject-card" data-subject="Âm nhạc">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Âm nhạc</span>
+              </a>
+
+              <a href="#lich-su" class="subject-card" data-subject="Lịch sử">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 22h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/>
+                    <polygon points="12 2 20 7 4 7"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Lịch sử</span>
+              </a>
+
+              <a href="#tin-hoc" class="subject-card" data-subject="Tin học">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Tin học</span>
+              </a>
+            </div>
+          </section>
+
+          <section class="subject-group" aria-labelledby="level-cd">
+            <h3 class="group-title" id="level-cd">Cao đẳng Trần Đại Nghĩa</h3>
+            <div class="subject-grid">
+              <a href="#tin-hoc-cd" class="subject-card" data-subject="Tin học (CĐ)">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Tin học (CĐ)</span>
+              </a>
+
+              <a href="#tieng-anh-chuyen-nganh" class="subject-card" data-subject="Tiếng Anh chuyên ngành Tin Học">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/>
+                    <path d="m22 22-5-10-5 10"/><path d="M14 18h6"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Tiếng Anh chuyên ngành Tin Học</span>
+              </a>
+
+              <a href="#cau-truc-du-lieu" class="subject-card" data-subject="Cấu trúc dữ liệu">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/>
+                    <rect x="9" y="15" width="6" height="6" rx="1"/><path d="M6 9v3a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V9"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Cấu trúc dữ liệu</span>
+              </a>
+
+              <a href="#lap-trinh-huong-doi-tuong" class="subject-card" data-subject="Lập trình hướng đối tượng">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Lập trình hướng đối tượng</span>
+              </a>
+
+              <a href="#he-quan-tri-csdl-nga" class="subject-card" data-subject="Hệ quản trị CSDL (Ms.Nga)">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                    <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Hệ quản trị CSDL (Ms.Nga)</span>
+              </a>
+
+              <a href="#he-quan-tri-csdl-hai" class="subject-card" data-subject="Hệ quản trị CSDL (Mr.Hải)">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                    <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Hệ quản trị CSDL (Mr.Hải)</span>
+              </a>
+
+              <a href="#ky-thuat-lap-trinh-java" class="subject-card" data-subject="Kỹ thuật lập trình CB (Java)">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/>
+                    <line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Kỹ thuật lập trình CB (Java)</span>
+              </a>
+
+              <a href="#tin-hoc-tc" class="subject-card" data-subject="Tin học (TC)">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01"/><path d="M10 8h.01"/><path d="M14 8h.01"/><path d="M8 12h8"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Tin học (TC)</span>
+              </a>
+
+              <a href="#chinh-tri-tc" class="subject-card" data-subject="Chính trị - TC">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Chính trị - TC</span>
+              </a>
+            </div>
+          </section>
+
+          <section class="subject-group" aria-labelledby="level-av-th-gt">
+            <h3 class="group-title" id="level-av-th-gt">Anh văn - Tin học - Giao thông</h3>
+            <div class="subject-grid">
+              <a href="#ung-dung-cntt-2016" class="subject-card" data-subject="Ứng dụng CNTT Cơ bản (MS Office 2016)">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                    <polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Ứng dụng CNTT Cơ bản (MS Office 2016)</span>
+              </a>
+
+              <a href="#toeic-part-5" class="subject-card" data-subject="TOEIC-Part 5">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                </span>
+                <span class="subject-label">TOEIC-Part 5</span>
+              </a>
+
+              <a href="#ielts-voc" class="subject-card" data-subject="IELTS - VOC">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/>
+                  </svg>
+                </span>
+                <span class="subject-label">IELTS - VOC</span>
+              </a>
+
+              <a href="#ung-dung-cntt-2010" class="subject-card" data-subject="Ứng dụng CNTT Cơ bản (MS Office 2010)">
+                <span class="subject-thumb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                    <polyline points="14 2 14 8 20 8"/><path d="M9 15h6"/>
+                  </svg>
+                </span>
+                <span class="subject-label">Ứng dụng CNTT Cơ bản (MS Office 2010)</span>
+              </a>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">K<span>.</span></span>
+          <span class="brand-name">Khoa <strong>CNTT</strong></span>
+        </a>
+        <span>Học tập mỗi ngày, tiến bộ mỗi ngày.</span>
+        <a href="#top">Lên đầu trang ↑</a>
+      </div>
+    </footer>
+
+    <dialog class="quiz-dialog" id="quiz-dialog" aria-labelledby="quiz-title">
+      <div class="quiz-dialog-inner">
+        <div class="dialog-top">
+          <span class="dialog-brand"><span class="brand-mark" aria-hidden="true">K<span>.</span></span> BÀI KIỂM TRA NHANH</span>
+          <button class="icon-button" id="close-quiz" type="button" aria-label="Đóng bài kiểm tra">×</button>
+        </div>
+        <div id="quiz-content"></div>
+      </div>
+    </dialog>
+  </body>
+</html>

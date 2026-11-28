@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7fb">
+    <meta name="description" content="Khoa CNTT — Đăng nhập hoặc đăng ký tài khoản học tập.">
+    <title>Đăng nhập & Đăng ký — Khoa CNTT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html#trang-chu" aria-label="Khoa CNTT - Trang chủ">
+          <span class="brand-mark" aria-hidden="true">K<span>.</span></span>
+          <span class="brand-name">Khoa <strong>CNTT</strong></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Mở menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Điều hướng chính">
+          <a class="nav-link" href="index.html#trang-chu">Trang chủ</a>
+          <a class="nav-link" href="mon-hoc.html">Môn học</a>
+          <a class="nav-link" href="kiem-tra.html">Kiểm tra</a>
+          <a class="nav-link" href="ket-qua.html">Kết quả</a>
+          <a class="nav-link" href="index.html#tai-lieu">Tài liệu</a>
+        </nav>
+        <a class="header-cta active-cta" href="login.html">Đăng nhập <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-shell auth-shell">
+        <section class="auth-card" aria-labelledby="auth-heading">
+          <div class="auth-aside">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> CỔNG HỌC TẬP KHOA CNTT</div>
+            <h1 id="auth-heading">Đồng hành học tập,<br><span>kết nối tri thức.</span></h1>
+            <p>Truy cập môn học, bài kiểm tra và tài liệu cho cả hai cấp học Trung học cơ sở và Cao đẳng Trần Đại Nghĩa.</p>
+            <ul class="auth-highlights">
+              <li><span>✓</span> Quản lý tiến độ môn học cá nhân</li>
+              <li><span>✓</span> Lưu lịch sử làm bài kiểm tra & kết quả</li>
+              <li><span>✓</span> Kho tài liệu học tập cập nhật liên tục</li>
+            </ul>
+            <a class="auth-back-link" href="index.html">← Quay lại trang chủ</a>
+          </div>
+
+          <div class="auth-main">
+            <div class="auth-panel" id="panel-login">
+              <div class="auth-panel-header">
+                <h2>Đăng nhập</h2>
+                <p>Nhập thông tin tài khoản để tiếp tục học tập.</p>
+              </div>
+              <form class="auth-form" id="login-form" novalidate>
+                <label class="field-group">
+                  <span>Email hoặc tên đăng nhập</span>
+                  <input type="text" name="username" autocomplete="username" placeholder="vd: sinhvien@cntt.edu.vn" required>
+                </label>
+                <label class="field-group">
+                  <span>Mật khẩu</span>
+                  <div class="password-field">
+                    <input type="password" name="password" autocomplete="current-password" placeholder="Nhập mật khẩu" required>
+                    <button class="password-toggle" type="button" aria-label="Hiện mật khẩu">Hiện</button>
+                  </div>
+                </label>
+                <div class="auth-row">
+                  <label class="checkbox-field">
+                    <input type="checkbox" name="remember">
+                    <span>Ghi nhớ đăng nhập</span>
+                  </label>
+                  <button class="text-action" type="button" data-forgot-password>Quên mật khẩu?</button>
+                </div>
+                <div class="auth-feedback" role="status" aria-live="polite"></div>
+                <button class="button auth-submit" type="submit">Đăng nhập <span aria-hidden="true">→</span></button>
+              </form>
+              <p class="auth-switch">Chưa có tài khoản? <button class="text-action" type="button" data-auth-switch="register">Đăng ký ngay</button></p>
+            </div>
+
+            <div class="auth-panel" id="panel-register" hidden>
+              <div class="auth-panel-header">
+                <h2>Đăng ký</h2>
+                <p>Đăng ký để truy cập đầy đủ bài kiểm tra và tài liệu.</p>
+              </div>
+              <form class="auth-form" id="register-form" novalidate>
+                <label class="field-group">
+                  <span>Họ và tên</span>
+                  <input type="text" name="fullname" autocomplete="name" placeholder="Nguyễn Văn A" required>
+                </label>
+                <label class="field-group">
+                  <span>Cấp học</span>
+                  <select name="level" required>
+                    <option value="">Chọn cấp học</option>
+                    <option value="thcs">Trung học cơ sở</option>
+                    <option value="cd-tdn">Cao đẳng Trần Đại Nghĩa</option>
+                  </select>
+                </label>
+                <label class="field-group">
+                  <span>Email</span>
+                  <input type="email" name="email" autocomplete="email" placeholder="tenban@example.com" required>
+                </label>
+                <label class="field-group">
+                  <span>Mật khẩu</span>
+                  <div class="password-field">
+                    <input type="password" name="password" autocomplete="new-password" placeholder="Tối thiểu 6 ký tự" required>
+                    <button class="password-toggle" type="button" aria-label="Hiện mật khẩu">Hiện</button>
+                  </div>
+                </label>
+                <label class="field-group">
+                  <span>Xác nhận mật khẩu</span>
+                  <div class="password-field">
+                    <input type="password" name="confirmPassword" autocomplete="new-password" placeholder="Nhập lại mật khẩu" required>
+                    <button class="password-toggle" type="button" aria-label="Hiện mật khẩu">Hiện</button>
+                  </div>
+                </label>
+                <div class="auth-feedback" role="status" aria-live="polite"></div>
+                <button class="button auth-submit" type="submit">Đăng ký tài khoản <span aria-hidden="true">→</span></button>
+              </form>
+              <p class="auth-switch">Đã có tài khoản? <button class="text-action" type="button" data-auth-switch="login">Đăng nhập</button></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="brand footer-brand" href="index.html#trang-chu">
+          <span class="brand-mark" aria-hidden="true">K<span>.</span></span>
+          <span class="brand-name">Khoa <strong>CNTT</strong></span>
+        </a>
+        <span>Học tập mỗi ngày, tiến bộ mỗi ngày.</span>
+        <a href="index.html">Về trang chủ ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>

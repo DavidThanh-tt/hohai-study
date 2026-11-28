@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7fb">
+    <meta name="description" content="Khoa CNTT — Chọn môn học, nhập mã số sinh viên và làm bài kiểm tra trắc nghiệm trực tuyến.">
+    <title>Kiểm tra — Khoa CNTT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Khoa CNTT - Trang chủ">
+          <span class="brand-mark" aria-hidden="true">K<span>.</span></span>
+          <span class="brand-name">Khoa <strong>CNTT</strong></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Mở menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Điều hướng chính">
+          <a class="nav-link" href="index.html">Trang chủ</a>
+          <a class="nav-link" href="mon-hoc.html">Môn học</a>
+          <a class="nav-link active" href="kiem-tra.html">Kiểm tra</a>
+          <a class="nav-link" href="ket-qua.html">Kết quả</a>
+          <a class="nav-link" href="index.html#tai-lieu">Tài liệu</a>
+        </nav>
+        <a class="header-cta" href="login.html">Đăng nhập <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="top">
+      <div class="page-shell exam-shell">
+        <section class="exam-directory" id="exam-directory" aria-labelledby="exam-heading">
+          <header class="exam-header">
+            <div class="section-kicker">KIỂM TRA TRỰC TUYẾN</div>
+            <h1 id="exam-heading">NỘI DUNG TRẮC NGHIỆM <span class="heading-spark">✳</span></h1>
+            <div class="exam-divider" aria-hidden="true"><span></span></div>
+            <p class="exam-subtitle">Chọn nhóm môn học, nhập mã số sinh viên và hoàn thành bài kiểm tra theo thời gian quy định.</p>
+          </header>
+
+          <div class="exam-cards">
+            <article class="exam-card" data-category="thcs">
+              <span class="exam-card-tag">CẤP HỌC 01 • 9 MÔN</span>
+              <h2>Trung học cơ sở</h2>
+              <ul class="exam-list">
+                <li>Sinh học</li>
+                <li>Hoá học</li>
+                <li>Địa lý</li>
+                <li>Công nghệ</li>
+                <li>Vật lý</li>
+                <li>GDCD</li>
+                <li>Âm nhạc</li>
+                <li>Lịch sử</li>
+                <li>Tin học</li>
+              </ul>
+              <button class="exam-choose-btn" type="button" data-choose-category="thcs">CHỌN</button>
+            </article>
+
+            <article class="exam-card" data-category="ktkt">
+              <span class="exam-card-tag">CHUYÊN NGÀNH • 9 MÔN</span>
+              <h2>KTKT-HCM</h2>
+              <ul class="exam-list">
+                <li>Tin học (CĐ)</li>
+                <li>Tiếng Anh chuyên ngành Tin Học</li>
+                <li>Cấu trúc dữ liệu</li>
+                <li>Lập trình hướng đối tượng</li>
+                <li>Hệ quản trị CSDL (Ms.Nga)</li>
+                <li>Hệ quản trị CSDL (Mr.Hải)</li>
+                <li>Kỹ thuật lập trình CB (Java)</li>
+                <li>Tin học (TC)</li>
+                <li>Chính trị - TC</li>
+              </ul>
+              <button class="exam-choose-btn" type="button" data-choose-category="ktkt">CHỌN</button>
+            </article>
+
+            <article class="exam-card" data-category="avthgt">
+              <span class="exam-card-tag">CHỨNG CHỈ • 4 MÔN</span>
+              <h2>Anh văn - Tin học - Giao thông</h2>
+              <ul class="exam-list">
+                <li>Ứng dụng CNTT Cơ bản (MS Office 2016)</li>
+                <li>TOEIC-Part 5</li>
+                <li>IELTS - VOC</li>
+                <li>Ứng dụng CNTT Cơ bản (MS Office 2010)</li>
+              </ul>
+              <button class="exam-choose-btn" type="button" data-choose-category="avthgt">CHỌN</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="exam-runner" id="exam-runner" hidden aria-live="polite">
+          <div class="runner-topbar">
+            <div class="runner-info">
+              <span class="runner-badge" id="runner-category">Nhóm môn</span>
+              <h2 id="runner-subject">Tên môn học</h2>
+              <p>Mã số sinh viên: <strong id="runner-mssv">---</strong><span id="runner-grade-wrap" hidden> • <strong id="runner-grade"></strong></span></p>
+            </div>
+            <div class="runner-timer-box">
+              <span class="timer-label">THỜI GIAN CÒN LẠI</span>
+              <strong class="timer-value" id="runner-timer">00:00</strong>
+            </div>
+          </div>
+
+          <div class="runner-progress-meta">
+            <span id="runner-progress-text">Câu 1 / 10</span>
+            <span id="runner-answered-text">Đã chọn: 0 / 10</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="runner-progress-bar" style="width: 0%"></div>
+          </div>
+
+          <div class="runner-question-nav" id="runner-question-nav" aria-label="Danh sách câu hỏi"></div>
+
+          <div class="runner-question-card" id="runner-question-card"></div>
+
+          <div class="auth-feedback runner-feedback" id="runner-feedback" role="status" aria-live="polite"></div>
+
+          <div class="runner-actions">
+            <button class="button runner-btn-secondary" type="button" id="runner-prev">← Câu trước</button>
+            <button class="button runner-btn-secondary" type="button" id="runner-next">Câu tiếp theo →</button>
+            <button class="button runner-btn-submit" type="button" id="runner-submit" disabled>Nộp bài & Xem kết quả ✓</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">K<span>.</span></span>
+          <span class="brand-name">Khoa <strong>CNTT</strong></span>
+        </a>
+        <span>Học tập mỗi ngày, tiến bộ mỗi ngày.</span>
+        <a href="#top">Lên đầu trang ↑</a>
+      </div>
+    </footer>
+
+    <dialog class="quiz-dialog exam-setup-dialog" id="exam-setup-dialog" aria-labelledby="setup-title">
+      <div class="quiz-dialog-inner">
+        <div class="dialog-top">
+          <span class="dialog-brand"><span class="brand-mark" aria-hidden="true">K<span>.</span></span> THIẾT LẬP BÀI KIỂM TRA</span>
+          <button class="icon-button" id="close-setup" type="button" aria-label="Đóng cửa sổ">×</button>
+        </div>
+
+        <form class="exam-setup-form" id="exam-setup-form" novalidate>
+          <div class="setup-heading">
+            <span class="section-kicker" id="setup-category-label">DANH MỤC</span>
+            <h2 id="setup-title">Chọn môn & cấu hình làm bài</h2>
+          </div>
+
+          <label class="field-group">
+            <span>Mã số sinh viên <strong class="required-mark">*</strong></span>
+            <input type="text" id="setup-mssv" name="mssv" placeholder="Nhập mã số sinh viên (vd: 22110045)" autocomplete="off" required>
+          </label>
+
+          <label class="field-group">
+            <span>Chọn môn học cụ thể <strong class="required-mark">*</strong></span>
+            <select id="setup-subject" name="subject" required></select>
+          </label>
+
+          <label class="field-group" id="setup-grade-group" hidden>
+            <span>Chọn lớp <strong class="required-mark">*</strong></span>
+            <select id="setup-grade" name="grade">
+              <option value="">Chọn lớp</option>
+              <option value="Lớp 6">Lớp 6</option>
+              <option value="Lớp 7">Lớp 7</option>
+              <option value="Lớp 8">Lớp 8</option>
+              <option value="Lớp 9">Lớp 9</option>
+            </select>
+          </label>
+
+          <div class="setup-row">
+            <label class="field-group">
+              <span>Số câu hỏi</span>
+              <select id="setup-count" name="count">
+                <option value="5">5 câu hỏi</option>
+                <option value="10" selected>10 câu hỏi</option>
+                <option value="15">15 câu hỏi</option>
+                <option value="20">20 câu hỏi</option>
+              </select>
+            </label>
+
+            <label class="field-group">
+              <span>Thời gian làm bài</span>
+              <select id="setup-duration" name="duration">
+                <option value="3">3 phút</option>
+                <option value="5">5 phút</option>
+                <option value="10" selected>10 phút</option>
+                <option value="15">15 phút</option>
+                <option value="30">30 phút</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="auth-feedback" id="setup-feedback" role="status" aria-live="polite"></div>
+
+          <button class="button auth-submit" type="submit">Bắt đầu làm bài <span aria-hidden="true">→</span></button>
+        </form>
+      </div>
+    </dialog>
+  </body>
+</html>

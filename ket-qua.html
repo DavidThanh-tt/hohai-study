@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7fb">
+    <meta name="description" content="Khoa CNTT — Xem điểm số, chi tiết bài làm và lịch sử kết quả kiểm tra trắc nghiệm.">
+    <title>Kết quả — Khoa CNTT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Khoa CNTT - Trang chủ">
+          <span class="brand-mark" aria-hidden="true">K<span>.</span></span>
+          <span class="brand-name">Khoa <strong>CNTT</strong></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Mở menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Điều hướng chính">
+          <a class="nav-link" href="index.html">Trang chủ</a>
+          <a class="nav-link" href="mon-hoc.html">Môn học</a>
+          <a class="nav-link" href="kiem-tra.html">Kiểm tra</a>
+          <a class="nav-link active" href="ket-qua.html">Kết quả</a>
+          <a class="nav-link" href="index.html#tai-lieu">Tài liệu</a>
+        </nav>
+        <a class="header-cta" href="login.html">Đăng nhập <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="top">
+      <div class="page-shell results-shell">
+        <section class="content-section" aria-labelledby="results-title">
+          <div class="section-heading">
+            <div>
+              <div class="section-kicker">BẢNG ĐIỂM & LỊCH SỬ</div>
+              <h1 id="results-title" class="results-page-title">Kết quả kiểm tra <span class="heading-spark">✳</span></h1>
+              <p>Theo dõi điểm số, đáp án chi tiết và lịch sử làm bài theo mã số sinh viên.</p>
+            </div>
+            <a class="view-all" href="kiem-tra.html">Làm bài mới <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div id="results-root"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">K<span>.</span></span>
+          <span class="brand-name">Khoa <strong>CNTT</strong></span>
+        </a>
+        <span>Học tập mỗi ngày, tiến bộ mỗi ngày.</span>
+        <a href="#top">Lên đầu trang ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7fb">
+    <meta name="description" content="Khoa CNTT — cổng học tập trực tuyến với môn học, tài liệu và bài kiểm tra.">
+    <title>Khoa CNTT — Học tập mỗi ngày</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#trang-chu" aria-label="Khoa CNTT - Trang chủ">
+          <span class="brand-mark" aria-hidden="true">K<span>.</span></span>
+          <span class="brand-name">Khoa <strong>CNTT</strong></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Mở menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Điều hướng chính">
+          <a class="nav-link active" href="#trang-chu">Trang chủ</a>
+          <a class="nav-link" href="mon-hoc.html">Môn học</a>
+          <a class="nav-link" href="kiem-tra.html">Kiểm tra</a>
+          <a class="nav-link" href="ket-qua.html">Kết quả</a>
+          <a class="nav-link" href="#tai-lieu">Tài liệu</a>
+        </nav>
+        <a class="header-cta" href="login.html">Đăng nhập <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="trang-chu">
+      <div class="page-shell">
+        <section class="content-section courses-section" id="mon-hoc" aria-labelledby="courses-title">
+          <div class="section-heading">
+            <div>
+              <div class="section-kicker">HỌC TẬP</div>
+              <h2 id="courses-title">Môn học đề xuất <span class="heading-spark">✳</span></h2>
+              <p>Chọn cấp học và môn học phù hợp để bắt đầu hành trình của bạn.</p>
+            </div>
+            <a class="view-all" href="mon-hoc.html">Xem tất cả <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="course-group" aria-labelledby="level-thcs">
+            <div class="course-group-header">
+              <div>
+                <span class="course-level-tag">CẤP HỌC 01</span>
+                <h3 id="level-thcs">Trung học cơ sở</h3>
+              </div>
+              <span class="course-group-count">4 môn học</span>
+            </div>
+            <div class="course-grid">
+              <a class="course-card course-blue" href="#kiem-tra">
+                <div class="course-art"><span class="course-glyph">01</span><span class="art-symbol">6</span><span class="art-ring"></span></div>
+                <div class="course-info"><span class="course-label">TRUNG HỌC CƠ SỞ</span><h4>Tin học 6</h4><span class="course-link">Khám phá môn học <span aria-hidden="true">↗</span></span></div>
+              </a>
+              <a class="course-card course-mint" href="#kiem-tra">
+                <div class="course-art"><span class="course-glyph">02</span><span class="art-symbol">7</span><span class="art-ring"></span></div>
+                <div class="course-info"><span class="course-label">TRUNG HỌC CƠ SỞ</span><h4>Tin học 7</h4><span class="course-link">Khám phá môn học <span aria-hidden="true">↗</span></span></div>
+              </a>
+              <a class="course-card course-yellow" href="#kiem-tra">
+                <div class="course-art"><span class="course-glyph">03</span><span class="art-symbol">8</span><span class="art-ring"></span></div>
+                <div class="course-info"><span class="course-label">TRUNG HỌC CƠ SỞ</span><h4>Tin học 8</h4><span class="course-link">Khám phá môn học <span aria-hidden="true">↗</span></span></div>
+              </a>
+              <a class="course-card course-lilac" href="#kiem-tra">
+                <div class="course-art"><span class="course-glyph">04</span><span class="art-symbol">9</span><span class="art-ring"></span></div>
+                <div class="course-info"><span class="course-label">TRUNG HỌC CƠ SỞ</span><h4>Tin học 9</h4><span class="course-link">Khám phá môn học <span aria-hidden="true">↗</span></span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="course-group" aria-labelledby="level-cd">
+            <div class="course-group-header">
+              <div>
+                <span class="course-level-tag">CẤP HỌC 02</span>
+                <h3 id="level-cd">Cao đẳng Trần Đại Nghĩa</h3>
+              </div>
+              <span class="course-group-count">6 môn học</span>
+            </div>
+            <div class="course-grid">
+              <a class="course-card course-blue" href="#kiem-tra">
+                <div class="course-art"><span class="course-glyph">01</span><span class="art-symbol">⌘</span><span class="art-ring"></span></div>
+                <div class="course-info"><span class="course-label">CƠ SỞ NGÀNH</span><h4>Tin học (CĐ)</h4><span class="course-link">Khám phá môn học <span aria-hidden="true">↗</span></span></div>
+              </a>
+              <a class="course-card course-yellow" href="#kiem-tra">
+                <div class="course-art"><span class="course-glyph">02</span><span class="art-symbol">Aa</span><span class="art-ring"></span></div>
+                <div class="course-info"><span class="course-label">NGOẠI NGỮ</span><h4>Tiếng Anh chuyên ngành Tin Học</h4><span class="course-link">Khám phá môn học <span aria-hidden="true">↗</span></span></div>
+              </a>
+              <a class="course-card course-lilac" href="#kiem-tra">
+                <div class="course-art"><span class="course-glyph">03</span><span class="art-symbol">⌘</span><span class="art-ring"></span></div>
+                <div class="course-info"><span class="course-label">LẬP TRÌNH</span><h4>Cấu trúc dữ liệu</h4><span class="course-link">Khám phá môn học <span aria-hidden="true">↗</span></span></div>
+              </a>
+              <a class="course-card course-mint" href="#kiem-tra">
+                <div class="course-art"><span class="course-glyph">04</span><span class="art-symbol">{ }</span><span class="art-ring"></span></div>
+                <div class="course-info"><span class="course-label">LẬP TRÌNH</span><h4>Lập trình hướng đối tượng</h4><span class="course-link">Khám phá môn học <span aria-hidden="true">↗</span></span></div>
+              </a>
+              <a class="course-card course-peach" href="#kiem-tra">
+                <div class="course-art"><span class="course-glyph">05</span><span class="art-symbol">▤</span><span class="art-ring"></span></div>
+                <div class="course-info"><span class="course-label">CƠ SỞ DỮ LIỆU</span><h4>Hệ quản trị CSDL <span class="teacher">(Ms.Nga)</span></h4><span class="course-link">Khám phá môn học <span aria-hidden="true">↗</span></span></div>
+              </a>
+              <a class="course-card course-sky" href="#kiem-tra">
+                <div class="course-art"><span class="course-glyph">06</span><span class="art-symbol">⌗</span><span class="art-ring"></span></div>
+                <div class="course-info"><span class="course-label">CƠ SỞ DỮ LIỆU</span><h4>Hệ quản trị CSDL <span class="teacher">(Mr.Hải)</span></h4><span class="course-link">Khám phá môn học <span aria-hidden="true">↗</span></span></div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="brand footer-brand" href="#trang-chu">
+          <span class="brand-mark" aria-hidden="true">K<span>.</span></span>
+          <span class="brand-name">Khoa <strong>CNTT</strong></span>
+        </a>
+        <span>Học tập mỗi ngày, tiến bộ mỗi ngày.</span>
+        <a href="#trang-chu">Lên đầu trang ↑</a>
+      </div>
+    </footer>
+
+    <dialog class="quiz-dialog" id="quiz-dialog" aria-labelledby="quiz-title">
+      <div class="quiz-dialog-inner">
+        <div class="dialog-top">
+          <span class="dialog-brand"><span class="brand-mark" aria-hidden="true">K<span>.</span></span> BÀI KIỂM TRA NHANH</span>
+          <button class="icon-button" id="close-quiz" type="button" aria-label="Đóng bài kiểm tra">×</button>
+        </div>
+        <div id="quiz-content"></div>
+      </div>
+    </dialog>
+  </body>
+</html>
